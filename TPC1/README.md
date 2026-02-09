@@ -22,7 +22,7 @@ A ontologia instancia 17 indivíduos que representam a narrativa, incluindo cinc
 
 | Ficheiro | Descrição |
 |----------|-----------|
-| [manifesto.ttl](./manifesto.ttl) | Ontologia completa da história em formato Turtle com todas as classes, propriedades e indivíduos |
+| [historia.ttl](./historia.ttl) | Ontologia completa da história em formato Turtle com todas as classes, propriedades e indivíduos |
 
 ---
 
