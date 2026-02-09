@@ -1,10 +1,10 @@
-@prefix : <http://rpcw.di.uminho.pt/2026/manifesto/> .
+@prefix : <http://rpcw.di.uminho.pt/2026/historia/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://rpcw.di.uminho.pt/2026/manifesto/> .
+@base <http://rpcw.di.uminho.pt/2026/historia/> .
 
 <http://rpcw.di.uminho.pt/2026/historia> rdf:type owl:Ontology .
 
@@ -12,43 +12,43 @@
 #    Object Properties
 #################################################################
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/amigoDe
+###  http://rpcw.di.uminho.pt/2026/historia/amigoDe
 :amigoDe rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/aprendeLíngua
+###  http://rpcw.di.uminho.pt/2026/historia/aprendeLíngua
 :aprendeLíngua rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/docenteDe
+###  http://rpcw.di.uminho.pt/2026/historia/docenteDe
 :docenteDe rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/estudaEm
+###  http://rpcw.di.uminho.pt/2026/historia/estudaEm
 :estudaEm rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/falaLíngua
+###  http://rpcw.di.uminho.pt/2026/historia/falaLíngua
 :falaLíngua rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/frequenta
+###  http://rpcw.di.uminho.pt/2026/historia/frequenta
 :frequenta rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/leciona
+###  http://rpcw.di.uminho.pt/2026/historia/leciona
 :leciona rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/oriundoDe
+###  http://rpcw.di.uminho.pt/2026/historia/oriundoDe
 :oriundoDe rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/parceiroLinguisticoDe
+###  http://rpcw.di.uminho.pt/2026/historia/parceiroLinguisticoDe
 :parceiroLinguisticoDe rdf:type owl:ObjectProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/pertenceA
+###  http://rpcw.di.uminho.pt/2026/historia/pertenceA
 :pertenceA rdf:type owl:ObjectProperty .
 
 
@@ -56,15 +56,15 @@
 #    Data properties
 #################################################################
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/temHorário
+###  http://rpcw.di.uminho.pt/2026/historia/temHorário
 :temHorário rdf:type owl:DatatypeProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/temIdade
+###  http://rpcw.di.uminho.pt/2026/historia/temIdade
 :temIdade rdf:type owl:DatatypeProperty .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/éLecionadoEm
+###  http://rpcw.di.uminho.pt/2026/historia/éLecionadoEm
 :éLecionadoEm rdf:type owl:DatatypeProperty .
 
 
@@ -72,27 +72,27 @@
 #    Classes
 #################################################################
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Cidade
+###  http://rpcw.di.uminho.pt/2026/historia/Cidade
 :Cidade rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Curso
+###  http://rpcw.di.uminho.pt/2026/historia/Curso
 :Curso rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Instituição
+###  http://rpcw.di.uminho.pt/2026/historia/Instituição
 :Instituição rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Língua
+###  http://rpcw.di.uminho.pt/2026/historia/Língua
 :Língua rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/País
+###  http://rpcw.di.uminho.pt/2026/historia/País
 :País rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Pessoa
+###  http://rpcw.di.uminho.pt/2026/historia/Pessoa
 :Pessoa rdf:type owl:Class .
 
 
@@ -100,67 +100,67 @@
 #    Individuals
 #################################################################
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Alemanha
+###  http://rpcw.di.uminho.pt/2026/historia/Alemanha
 :Alemanha rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Alemão
+###  http://rpcw.di.uminho.pt/2026/historia/Alemão
 :Alemão rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Ana
+###  http://rpcw.di.uminho.pt/2026/historia/Ana
 :Ana rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Carlos
+###  http://rpcw.di.uminho.pt/2026/historia/Carlos
 :Carlos rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Centro_de_Linguas
+###  http://rpcw.di.uminho.pt/2026/historia/Centro_de_Linguas
 :Centro_de_Linguas rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Curso_de_Alemão
+###  http://rpcw.di.uminho.pt/2026/historia/Curso_de_Alemão
 :Curso_de_Alemão rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Curso_de_Biotecnologia
+###  http://rpcw.di.uminho.pt/2026/historia/Curso_de_Biotecnologia
 :Curso_de_Biotecnologia rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Eduardo
+###  http://rpcw.di.uminho.pt/2026/historia/Eduardo
 :Eduardo rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Escola_de_Letras
+###  http://rpcw.di.uminho.pt/2026/historia/Escola_de_Letras
 :Escola_de_Letras rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Espanhol
+###  http://rpcw.di.uminho.pt/2026/historia/Espanhol
 :Espanhol rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Hanna
+###  http://rpcw.di.uminho.pt/2026/historia/Hanna
 :Hanna rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Helmut_Ratz
+###  http://rpcw.di.uminho.pt/2026/historia/Helmut_Ratz
 :Helmut_Ratz rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Inglês
+###  http://rpcw.di.uminho.pt/2026/historia/Inglês
 :Inglês rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Porto
+###  http://rpcw.di.uminho.pt/2026/historia/Porto
 :Porto rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Português
+###  http://rpcw.di.uminho.pt/2026/historia/Português
 :Português rdf:type owl:NamedIndividual .
 
 
-###  http://rpcw.di.uminho.pt/2026/manifesto/Universidade_do_Minho
+###  http://rpcw.di.uminho.pt/2026/historia/Universidade_do_Minho
 :Universidade_do_Minho rdf:type owl:NamedIndividual .
 
 
