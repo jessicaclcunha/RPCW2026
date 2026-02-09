@@ -7,7 +7,7 @@
 
 **Nome:** Jéssica Cristina Lima da Cunha
 
-![Foto](../imgs/autor.jpg)
+<img src="../imgs/autor.jpg" width="150">
 
 ## Resumo
 
