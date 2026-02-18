@@ -22,10 +22,13 @@ A partir do esboço base, foram realizadas as seguintes expansões:
 
 ## Resultados
 
-| Ficheiro | Descrição |
-|----------|-----------|
-| [cinema.ttl](./cinema.ttl) | Ontologia com o povoamento dos filmes Madagascar 2 e Interstellar. |
-| [cinema_inferida.ttl](./cinema_inferida.ttl) | Versão da ontologia com o conhecimento inferido pelo reasoner. |
+**[cinema.ttl](./cinema.ttl)**
+>*Ontologia com o povoamento dos filmes Madagascar 2 e Interstellar.*
+
+---
+
+**[cinema_inferida.ttl](./cinema_inferida.ttl)**
+>*Versão da ontologia com o conhecimento inferido pelo reasoner.*
 
 ---
 
