@@ -24,7 +24,7 @@
 
 ---
 
-### TPC3 • 
+### TPC3 • GraphDB e SPARQL com a Ontologia do Polvo Filosófico
 > O objetivo deste trabalho foi a exploração de uma ontologia utilizando o GraphDB e a execução de queries SPARQL para extração de conhecimento.
 
 **[Ver trabalho →](./TPC3)**

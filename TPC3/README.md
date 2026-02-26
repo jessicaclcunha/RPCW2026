@@ -1,4 +1,4 @@
-# TPC3 • Continuar a Povoar a Ontologia de Cinema
+# TPC3 • GraphDB e SPARQL com a Ontologia do Polvo Filosófico
 
 **Data:** 25/02/2026
 
@@ -82,6 +82,7 @@ SELECT ?prato ?ingrediente WHERE {
 
 ### Há funcionários que também sejam clientes?
 ```sparql
+
 PREFIX : <http://example.org/polvo-filosofico#>
 
 SELECT ?pessoa WHERE {
@@ -90,7 +91,7 @@ SELECT ?pessoa WHERE {
 }
 ```
 
-**Resposta:** Schrodinger
+**Resposta:** Schrödinger
 ---
 
 *Trabalho realizado no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
