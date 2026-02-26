@@ -24,4 +24,11 @@
 
 ---
 
+### TPC3 • 
+> O objetivo deste trabalho foi a exploração de uma ontologia utilizando o GraphDB e a execução de queries SPARQL para extração de conhecimento.
+
+**[Ver trabalho →](./TPC3)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
