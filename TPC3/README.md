@@ -92,12 +92,8 @@ SELECT ?pessoa WHERE {
 }
 ```
 
-<<<<<<< HEAD
 **Resposta:** Schrödinger
-=======
-**Resposta:** Schrodinger
 
->>>>>>> ef2eab5fb11a3e7a9fc598ff41261e17d4a7aec5
 ---
 
 *Trabalho realizado no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
