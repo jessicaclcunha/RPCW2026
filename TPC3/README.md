@@ -81,6 +81,7 @@ SELECT ?prato ?ingrediente WHERE {
 ---
 
 ### Há funcionários que também sejam clientes?
+
 ```sparql
 PREFIX : <http://example.org/polvo-filosofico#>
 
@@ -91,6 +92,7 @@ SELECT ?pessoa WHERE {
 ```
 
 **Resposta:** Schrodinger
+
 ---
 
 *Trabalho realizado no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
