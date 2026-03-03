@@ -1,0 +1,197 @@
+@prefix : <http://rpcw.di.uminho.pt/2026/biblioteca_temporal/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rpcw.di.uminho.pt/2026/biblioteca_temporal/> .
+
+<http://rpcw.di.uminho.pt/2026/biblioteca_temporal> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/existemEm
+:existemEm rdf:type owl:ObjectProperty ;
+           rdfs:domain :Livro ;
+           rdfs:range :LinhaTemporal .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/ocorremEm
+:ocorremEm rdf:type owl:ObjectProperty ;
+           rdfs:domain :Evento ;
+           rdfs:range :LinhaTemporal .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/pertencemA
+:pertencemA rdf:type owl:ObjectProperty ;
+            rdfs:domain :Livro ;
+            rdfs:range :Biblioteca .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/refere
+:refere rdf:type owl:ObjectProperty .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/requisitam
+:requisitam rdf:type owl:ObjectProperty ;
+            rdfs:domain :Leitor ;
+            rdfs:range :Livro .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/sãoEscritosPor
+:sãoEscritosPor rdf:type owl:ObjectProperty ;
+                rdfs:domain :Livro ;
+                rdfs:range :Autor .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/trabalhaEm
+:trabalhaEm rdf:type owl:ObjectProperty ;
+            rdfs:domain :Pessoa ;
+            rdfs:range :Biblioteca .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Agente
+:Agente rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Autor
+:Autor rdf:type owl:Class ;
+       rdfs:subClassOf :Pessoa .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Biblioteca
+:Biblioteca rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Bibliotecário
+:Bibliotecário rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :trabalhaEm ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Biblioteca
+                                   ] ;
+               rdfs:subClassOf :Pessoa .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Empréstimo
+:Empréstimo rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EntidadeTemporal
+:EntidadeTemporal rdf:type owl:Class ;
+                  rdfs:subClassOf :Agente .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Evento
+:Evento rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EventoFuturo
+:EventoFuturo rdf:type owl:Class ;
+              rdfs:subClassOf :Evento .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EventoHistórico
+:EventoHistórico rdf:type owl:Class ;
+                 rdfs:subClassOf :Evento .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Leitor
+:Leitor rdf:type owl:Class ;
+        rdfs:subClassOf :Pessoa .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LinhaAlternativa
+:LinhaAlternativa rdf:type owl:Class ;
+                  rdfs:subClassOf :LinhaTemporal .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LinhaOriginal
+:LinhaOriginal rdf:type owl:Class ;
+               rdfs:subClassOf :LinhaTemporal .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LinhaTemporal
+:LinhaTemporal rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Livro
+:Livro rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :existemEm ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :LinhaTemporal
+                           ] .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LivroFiccional
+:LivroFiccional rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :refere ;
+                                      owl:allValuesFrom [ rdf:type owl:Class ;
+                                                          owl:complementOf :EventoHistórico
+                                                        ]
+                                    ] ;
+                rdfs:subClassOf :Livro ;
+                owl:disjointWith :LivroHistórico .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LivroHistórico
+:LivroHistórico rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :refere ;
+                                      owl:allValuesFrom :EventoHistórico
+                                    ] ;
+                rdfs:subClassOf :Livro .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LivroParadoxal
+:LivroParadoxal rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :existemEm ;
+                                      owl:someValuesFrom :LinhaAlternativa
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :existemEm ;
+                                      owl:someValuesFrom :LinhaOriginal
+                                    ] ;
+                rdfs:subClassOf :Livro .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Pessoa
+:Pessoa rdf:type owl:Class ;
+        rdfs:subClassOf :Agente .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Biblioteca_Entre_Ontem_e_Amanha
+:Biblioteca_Entre_Ontem_e_Amanha rdf:type owl:NamedIndividual ,
+                                          :Biblioteca .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Cronos
+:Cronos rdf:type owl:NamedIndividual ,
+                 :Autor ,
+                 :Bibliotecário .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Linha_T0
+:Linha_T0 rdf:type owl:NamedIndividual ,
+                   :LinhaOriginal .
+
+
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Linha_T1
+:Linha_T1 rdf:type owl:NamedIndividual ,
+                   :LinhaAlternativa .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
