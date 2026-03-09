@@ -31,7 +31,9 @@
 
 
 ###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/refere
-:refere rdf:type owl:ObjectProperty .
+:refere rdf:type owl:ObjectProperty ;
+            rdfs:domain :Livro ;
+            rdfs:range :Evento .
 
 
 ###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/requisitam
@@ -40,8 +42,8 @@
             rdfs:range :Livro .
 
 
-###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/sãoEscritosPor
-:sãoEscritosPor rdf:type owl:ObjectProperty ;
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/saoEscritosPor
+:saoEscritosPor rdf:type owl:ObjectProperty ;
                 rdfs:domain :Livro ;
                 rdfs:range :Autor .
 
@@ -69,8 +71,8 @@
 :Biblioteca rdf:type owl:Class .
 
 
-###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Bibliotecário
-:Bibliotecário rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Bibliotecario
+:Bibliotecario rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Restriction ;
                                      owl:onProperty :trabalhaEm ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -79,8 +81,8 @@
                rdfs:subClassOf :Pessoa .
 
 
-###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Empréstimo
-:Empréstimo rdf:type owl:Class .
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Emprestimo
+:Emprestimo rdf:type owl:Class .
 
 
 ###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EntidadeTemporal
@@ -97,8 +99,8 @@
               rdfs:subClassOf :Evento .
 
 
-###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EventoHistórico
-:EventoHistórico rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/EventoHistorico
+:EventoHistorico rdf:type owl:Class ;
                  rdfs:subClassOf :Evento .
 
 
@@ -135,18 +137,18 @@
                 owl:equivalentClass [ rdf:type owl:Restriction ;
                                       owl:onProperty :refere ;
                                       owl:allValuesFrom [ rdf:type owl:Class ;
-                                                          owl:complementOf :EventoHistórico
+                                                          owl:complementOf :EventoHistorico
                                                         ]
                                     ] ;
                 rdfs:subClassOf :Livro ;
-                owl:disjointWith :LivroHistórico .
+                owl:disjointWith :LivroHistorico .
 
 
-###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LivroHistórico
-:LivroHistórico rdf:type owl:Class ;
+###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/LivroHistorico
+:LivroHistorico rdf:type owl:Class ;
                 owl:equivalentClass [ rdf:type owl:Restriction ;
                                       owl:onProperty :refere ;
-                                      owl:allValuesFrom :EventoHistórico
+                                      owl:allValuesFrom :EventoHistorico
                                     ] ;
                 rdfs:subClassOf :Livro .
 
@@ -181,7 +183,7 @@
 ###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Cronos
 :Cronos rdf:type owl:NamedIndividual ,
                  :Autor ,
-                 :Bibliotecário .
+                 :Bibliotecario .
 
 
 ###  http://rpcw.di.uminho.pt/2026/biblioteca_temporal/Linha_T0

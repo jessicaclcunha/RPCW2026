@@ -31,4 +31,11 @@
 
 ---
 
+### TPC4 • Questões SPARQL — Ontologia da Biblioteca Temporal
+> Este trabalho consistiu na elaboração de queries SPARQL sobre a ontologia da Biblioteca Temporal desenvolvida na aula anterior.
+
+**[Ver trabalho →](./TPC4)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
