@@ -45,4 +45,11 @@
 
 ---
 
+### TPC6 • Biblioteca Temporal — Aplicação Web com Flask e SPARQL
+> Este trabalho consistiu na implementação da rota em falta(`/linhas`) de uma aplicação web Flask para consulta de uma ontologia, a Biblioteca Temporal. A aplicação comunica com um repositório GraphDB via SPARQL.
+
+**[Ver trabalho →](./TPC6)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
