@@ -52,4 +52,11 @@
 
 ---
 
+### Ficha • Ontologia Médica
+> Este trabalho consistiu no povoamento de uma ontologia médica em OWL/Turtle a partir de datasets CSV e JSON, seguido do desenvolvimento de queries SPARQL.
+
+**[Ver trabalho →](./RPCW2026/RPCW2026-Ficha-Medicina)**
+
+---
+
 *Trabalhos realizados no âmbito da UC de Representação e Processamento de Conhecimento na Web (RPCW) 2025/2026*
